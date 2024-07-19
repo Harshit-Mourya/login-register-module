@@ -20,7 +20,7 @@ export default function Login() {
           <div className="footer">
             <span>Don't have an account?</span>
             <Link to={"/register"}>
-              <button>Sign Up</button>
+              <button className="btn">Sign Up</button>
             </Link>
           </div>
         </div>
@@ -32,15 +32,27 @@ export default function Login() {
           </div>
           <form action="" className="form">
             <span></span>
-            <label htmlFor="username">Username</label>
-            <FaUser />
-            <input type="text" id="username" placeholder="Enter Username" />
-            <label htmlFor="password">Password</label>
-            <BsShieldLockFill />
-            <input type="password" id="password" placeholder="Enter Password" />
+            <div className="inputDiv">
+              <label htmlFor="username">Username</label>
+              <div className="input">
+                <FaUser className="icon" />
+                <input type="text" id="username" placeholder="Enter Username" />
+              </div>
+            </div>
+            <div className="inputDiv">
+              <label htmlFor="password">Password</label>
+              <div className="input">
+                <BsShieldLockFill className="icon" />
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter Password"
+                />
+              </div>
+            </div>
             <button type="submit">
               Login
-              <TbLogin2 />
+              <TbLogin2 className="icon" />
             </button>
 
             <span>

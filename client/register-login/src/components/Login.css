@@ -3,9 +3,8 @@
   height: 100vh;
   margin: auto;
   width: 100%;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   /* overflow: hidden; */
-  box-shadow: 0 7px 50px rgb(214, 223, 213);
 }
 
 .container {
@@ -15,40 +14,75 @@
   margin: auto;
   justify-content: space-between;
   border-radius: 10px;
-  background-color: rgba(204, 255, 0, 0.605);
+  background-color: rgba(229, 229, 229, 0.702);
+  box-shadow: 0 7px 20px rgb(117, 117, 117);
 }
 
 .form-box {
-  display: flex;
-}
-
-.form {
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
   margin: auto;
+  gap: 1.5rem;
+  /* transform: translateY(-1rem); */
+}
+
+.form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  color: grey;
+}
+
+.input input {
+  background: none;
+  outline: none;
+  border: none;
+  width: 200px;
+  padding-left: 0.5rem;
+}
+.inputDiv label {
+  font-weight: 500;
+  font-size: 14px;
+  padding: 0.5rem 0;
+  display: block;
+}
+
+.input {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+}
+.header {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.header img {
+  width: 60px;
+  padding-bottom: 1rem;
+}
+
+.header h3 {
+  font-size: 25px;
+  font-weight: 600;
 }
 
 .video {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 40%;
   height: 100%;
   text-align: center;
   justify-content: center;
-  margin: auto;
+  align-items: center;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.video video,
-.footer {
-  position: absolute;
-}
-
-.video {
-  height: 100%;
-  width: 100%;
   object-fit: cover;
   top: 0;
   right: 0;
@@ -56,7 +90,13 @@
   left: 0;
 }
 
+.video video,
+.footer {
+  position: absolute;
+}
+
 .text {
+  color: white;
   position: relative;
 }
 
@@ -67,8 +107,32 @@
 }
 
 .footer {
+  width: 95%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   bottom: 10px;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
   height: 60px;
   background-color: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(1px);
+}
+
+.btn {
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: rgba(0, 170, 0, 0.534);
+}
+
+.btn:hover {
+  background-color: rgba(0, 170, 0, 0.758);
+}
+
+.text p {
+  font-weight: 400;
+  margin-top: 1rem;
 }
