@@ -31,7 +31,7 @@ export default function Login() {
             <h3>Welcome Back!</h3>
           </div>
           <form action="" className="form">
-            <span></span>
+            <span className="showMsg">Login status</span>
             <div className="inputDiv">
               <label htmlFor="username">Username</label>
               <div className="input">
@@ -50,9 +50,9 @@ export default function Login() {
                 />
               </div>
             </div>
-            <button type="submit">
-              Login
-              <TbLogin2 className="icon" />
+            <button type="submit" className="btn login-btn">
+              <span>Login</span>
+              <TbLogin2 className="login-icon" />
             </button>
 
             <span>
