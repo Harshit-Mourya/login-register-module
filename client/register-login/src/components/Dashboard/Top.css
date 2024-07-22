@@ -1,0 +1,140 @@
+.headerSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-title h1 {
+  font-size: 30px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  gap: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 1px 4px grey;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.search-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.search-icon:hover {
+  color: green;
+}
+
+.adminIcon {
+  font-size: 25px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.adminIcon:hover {
+  color: green;
+}
+
+.adminDiv {
+  border-radius: 5px;
+
+  background-color: white;
+  padding: 5px 10px;
+  box-shadow: 0 1px 4px grey;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.adminImage {
+  height: 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.adminImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.cardSection {
+  display: flex;
+  align-items: center;
+  margin-top: 3rem;
+  gap: 1rem;
+}
+
+.rightCard {
+  display: flex;
+  align-items: flex-start;
+  height: 200px;
+  flex-direction: column;
+  position: relative;
+  flex-basis: 70%;
+  justify-content: center;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  /* background-size: cover;
+  background-position: center; */
+}
+
+.rightCard h1,
+p,
+.buttons {
+  z-index: 100;
+}
+
+.rightCard h1 {
+  font-size: 25px;
+  color: white;
+}
+
+.rightCard p {
+  color: white;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.videoDiv video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.buttons button {
+  background: none;
+  border: 2px solid rgba(0, 170, 0, 0.534);
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+.buttons button:hover {
+  background-color: rgba(0, 170, 0, 0.8);
+  color: white;
+}

@@ -1,5 +1,5 @@
 import logo from "./logo.png";
-import "./Dashboard.css";
+import "./Sidebar.css";
 
 import { MdDashboard } from "react-icons/md";
 import { BsBagCheckFill } from "react-icons/bs";
